@@ -1,0 +1,37 @@
+<div class="row">
+  <h2 class="card-title">{{kol.name}}</h2>
+  <div class="col-md-6">
+    <div class="row">
+  <div class="col-md-4">
+    <img src="{{kol.imageUrl}}" class="card-img rounded-circle mx-auto d-block" alt="Profile Picture">
+  </div>
+  <div class="col-md-8">
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>Posts:</b> {{kol.posts}}</li>
+        <li class="list-group-item"><b>Followers:</b> {{kol.followers}}</li>
+        <li class="list-group-item"><b>Following:</b> {{kol.following}}</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+    </div>
+  <div class="col-md-6">
+      <div class="row">
+    <div class="col-md-12">
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Industry:</b> {{kol.industry}}</li>
+          <li class="list-group-item"><b>Engagement:</b> {{kol.engagement}}</li>
+          <li class="list-group-item"><b>Demographics:</b> {{kol.demographics}}</li>
+          <li class="list-group-item"><b>Tags:</b></li>
+          {{#each kol.tags}}
+          <li class="list-group-item">{{this}}</li>
+          {{/each}}
+          <li class="list-group-item"><b>Slug:</b>{{kol.slug}}</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
